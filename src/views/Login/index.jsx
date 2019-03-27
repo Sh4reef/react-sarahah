@@ -132,7 +132,7 @@ class LoginPage extends React.Component {
 																			)
 																		}} />
 																)} />
-															{!loading && error &&
+															{!loading && error && error.graphQLErrors.length > 0 &&
 																<Danger>
 																	{error.graphQLErrors[0].message}
 																</Danger>
