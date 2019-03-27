@@ -22,7 +22,7 @@ import { UserProvider } from 'contexts/User';
 import "assets/scss/material-kit-pro-react.css?v=1.2.0";
 
 const httpLink = createHttpLink({
-	uri: "http://localhost:4000"
+	uri: "https://sarahah-hogzcdinrq.now.sh"
 });
 
 const authLink = setContext((_, { headers }) => {
