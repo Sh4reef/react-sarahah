@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "436a5e6430c17a8b567e",
+    "revision": "faf48862c1e27046d563",
     "url": "/sarahah/static/css/main.f4468e9d.chunk.css"
   },
   {
-    "revision": "436a5e6430c17a8b567e",
-    "url": "/sarahah/static/js/main.436a5e64.chunk.js"
+    "revision": "faf48862c1e27046d563",
+    "url": "/sarahah/static/js/main.faf48862.chunk.js"
   },
   {
     "revision": "c6971b9daa4cd45339c3",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/sarahah/static/media/city.58a713c7.jpg"
   },
   {
-    "revision": "f527b8c20f163c72068151a7af176ae7",
+    "revision": "78de512f6880844239352582611063c1",
     "url": "/sarahah/index.html"
   }
 ];
