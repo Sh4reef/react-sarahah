@@ -2,6 +2,7 @@
   "name": "react-sarahah",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sh4reef.github.io/sarahah",
   "dependencies": {
     "@material-ui/core": "^3.9.1",
     "@material-ui/icons": "^3.0.2",
@@ -12,6 +13,7 @@
     "apollo-link-error": "^1.1.10",
     "apollo-link-http": "^1.5.9",
     "final-form": "^4.12.0",
+    "gh-pages": "^2.0.1",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
     "react": "^16.8.5",
@@ -26,6 +28,8 @@
     "start": "NODE_PATH=./src react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
