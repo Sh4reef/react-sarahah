@@ -2,13 +2,10 @@ import React, { Fragment } from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Face from "@material-ui/icons/Face";
 import Email from "@material-ui/icons/Email";
-import Check from "@material-ui/icons/Check";
 // final form
 import { Form, Field, FormSpy } from "react-final-form";
 // apollo
@@ -77,7 +74,7 @@ class Components extends React.Component {
     }
   }
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <Fragment>
         <div

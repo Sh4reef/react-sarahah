@@ -57,9 +57,7 @@ const Profile = (props) => {
 					{({ loading, error, data }) => (
 						<Form
 							onSubmit={async (fields, form) => {
-								console.log(form.getState())
-								const dirtyFields = form.getState().dirtyFields
-								const result = await updateProfile({
+								await updateProfile({
 									variables: {
 										...fields
 									},
@@ -126,7 +124,10 @@ const Profile = (props) => {
 										{
 											!loading && data &&
 											<GridItem xs={12} sm={10} md={8}>
-												<a href={`${window.location.origin}/${data.profile.user.username}`} target="_blank">
+												<a
+													href={`${window.location.origin}/${data.profile.user.username}`}
+													target="_blank"
+													rel="noopener noreferrer">
 													<h5 style={{ textAlign: "center" }}>
 														{`${window.location.origin}/${data.profile.user.username}`}
 													</h5>
@@ -236,7 +237,7 @@ const Profile = (props) => {
 										<GridItem xs={12} sm={10} md={8}>
 											<FormSpy subscription={{ values: true }}>
 												{({ form }) => {
-													const { pristine, invalid, errors } = form.getState()
+													const { pristine, invalid } = form.getState()
 													return (
 														<Button
 															type="submit"

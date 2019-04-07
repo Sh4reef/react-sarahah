@@ -15,7 +15,6 @@ import { UserConsumer } from 'contexts/User';
 import Logout from "@material-ui/icons/PowerSettingsNew";
 import Settings from '@material-ui/icons/Settings';
 import Signup from '@material-ui/icons/Create';
-import AccountCircle from "@material-ui/icons/AccountCircle";
 import Login from '@material-ui/icons/ExitToApp';
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/headerStyle.jsx";

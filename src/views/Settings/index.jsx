@@ -51,7 +51,7 @@ class Components extends React.Component {
     document.body.scrollTop = 0;
   }
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <Fragment>
         <div

@@ -4,9 +4,6 @@ import React, { Fragment } from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Tooltip from "@material-ui/core/Tooltip";
-// @material-ui/icons
-import Add from "@material-ui/icons/Add";
 // contexts
 import { UserContext } from 'contexts/User';
 // final form
@@ -52,7 +49,7 @@ class ProfilePage extends React.Component {
 		document.body.scrollTop = 0;
 	}
 	render() {
-		const { classes, match, ...rest } = this.props;
+		const { classes, match } = this.props;
 		const imageClasses = classNames(
 			classes.imgRaised,
 			classes.imgRoundedCircle,

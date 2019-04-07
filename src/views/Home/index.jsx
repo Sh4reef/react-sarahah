@@ -6,27 +6,15 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // core components
-import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/headerStyle.jsx";
 
 import office2 from "assets/img/examples/office2.jpg";
 
 function SectionHeaders({ ...props }) {
-    const { classes, ...rest } = props;
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false
-    };
+    const { classes } = props;
     return (
         // we've set the className to cd-section so we can make smooth scroll to it
         <Fragment>

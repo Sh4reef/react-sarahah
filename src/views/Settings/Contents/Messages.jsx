@@ -8,8 +8,6 @@ import Pagination from "components/Pagination/Pagination.jsx";
 // apollo
 import gql from "graphql-tag";
 import { Query } from "react-apollo";
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
 
 import defaultAvatar from "assets/img/placeholder.jpg";
 
@@ -31,7 +29,7 @@ const Profile = ({ classes }) => {
 			first: 5,
 			skip: skip * 5
 		}}>
-			{({ loading, error, data }) => (
+			{({ loading, data }) => (
 				<Fragment>
 					<GridContainer justify="center">
 						{

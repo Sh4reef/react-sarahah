@@ -12,7 +12,6 @@ import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 // final form
 import { Form, Field, FormSpy } from "react-final-form";
-import { Snackbar } from "@material-ui/core";
 
 const UPDATE_PASSWORD_MUTATION = gql`
 	mutation UpdatePassword($currentPassword: String!, $newPassword: String!) {
@@ -38,7 +37,7 @@ const Password = (props) => {
 			{(updatePassword, { loading, data, error }) => (
 				<Form
 					onSubmit={async (fields) => {
-						const result = await updatePassword({
+						await updatePassword({
 							variables: {
 								currentPassword: fields.currentPassword,
 								newPassword: fields.newPassword
