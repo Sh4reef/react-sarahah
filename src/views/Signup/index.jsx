@@ -147,7 +147,7 @@ class Components extends React.Component {
                                               />
                                             </InputAdornment>
                                           ),
-                                          placeholder: "Email..."
+                                          placeholder: "Username..."
                                         }} />
                                     )} />
                                   <Field
