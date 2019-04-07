@@ -25,7 +25,7 @@ const CustomHeader = ({ classes, history, client }) => {
 			{({ token, removeToken }) => (
 				<Header
 					absolute
-					brand="Explicitly"
+					brand="Sarahah"
 					color="transparent"
 					links={
 						<List className={classes.list + " " + classes.mlAuto}>

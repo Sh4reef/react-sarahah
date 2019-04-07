@@ -36,7 +36,7 @@ function SectionHeaders({ ...props }) {
                         >
                             <h1 className={classes.title}>About us</h1>
                             <h4>
-                                Explicitly helps you in discovering your strengths and areas for improvement by receiving honest constructive feedback from your employees and your friends
+                                Sarahah helps you in discovering your strengths and areas for improvement by receiving honest constructive feedback from your employees and your friends
                                 </h4>
                         </GridItem>
                         {/* <GridItem
